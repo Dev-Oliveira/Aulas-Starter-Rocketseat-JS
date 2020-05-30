@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso JavaScript</title>
+</head>
+<body>
+    <script>
+        var x = 10
+        var y = 20
+        var resultado = x + y
+
+        console.log(resultado)
+
+        //Quando voce utiliza duas variaves definidas uma apos a outra, voce pode tirar a segunda var e declarar assim:;
+        var x = 10, y = 5, resultado = x + y
+        console.log(resultado)
+        
+        //Porém, nao é possivel somar uma variavel tipo string com uma variavel tipo inteiro o float
+        var x = 10, y = "5", resultado = x + y //OBS: Quando é colocado aspas("") em uma variavel ela
+                                                //automaticamente se torna do tipo string
+        console.log(resultado) 
+
+        //Então essas são as operações basicas do JS:
+
+        var x = 20, y = 10 
+        var resultado = x + y // O sinal "+" é o operador de soma
+            console.log(resultado) 
+            //resultado = 30
+
+        var resultado = x - y   //O sinal "-" é o operador de subtração
+            console.log(resultado)
+            //resultado = 10
+
+        var resultado = x * y //O sinal "*" é o operador de multiplicação
+            console.log(resultado)
+            //resultado = 200
+
+        var resultado = x / y //O sinal "/" é o operador de divisão
+            console.log(resultado)
+            //resultado = 2
+
+        var resultado = x % y //O sinal "%" é o operador de RESTO, ou seja
+                             // ele retorna o valor que resta de uma fração
+            console.log(resultado)
+            //resultado = 0
+
+        //Opçoes de incrementação de valores:
+
+        var x = 10
+
+        x += 20 
+        //Isso é o mesmo que eu fizer:"x = x + 20"
+        //Onde o novo valor de x é igual ao seu valor anterior mais 20
+        console.log(x)
+        //x = 30
+
+        //OBS: O mesmo funciona para qualquer outro operador
+    </script>
+</body>
+</html>

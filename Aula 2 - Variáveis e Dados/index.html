@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso Javascript</title>
+</head>
+<body>
+    <script> //tipos de variáveis
+
+            //No Javascript não é preciso declarar, em um primeiro momento, qual o tipo da váriavel
+            //Pois o JS entende automaticamente qual tipo de váriavel se trata 
+
+        var nome = "Diego"; //Variável String(conjunto de caracters)
+        var Idade = 23; //Variável Inteiro - Valores inteiros (Para números de valores não fracionado)
+        var peso = 80.5; //Variável Float - Valores decimais (que contem frações)
+        var humano = true; //Variável Booleana - Indica verdadeiro ou falso(true or false)
+
+        //Temos também os vetores(arrays), que são variáveis que armazena varios valores
+        var alunos = ['Diego','Hellom','Luann','Gabriel'];
+
+        //E os Objetos, que são variáveis que armazena varios valores referente a algum item(objeto)
+        var aluno = {
+            nome: 'Diego',
+            idade: 23,   //Impotante lembrar que as informações dentro do 'var aluno' não são mais variáveis 
+            peso: 80.5,  //Agora elas são tratadas como propriedades do nosso Obejto(var aluno)
+            humano: true, //Por isso os "=(sinais de iguais)" são trocador por ":(sinais de dois ponto)"
+        }
+        console.log(alunos[0]) //O conchetes é usado para buscar a informação dentro do array. 
+                                //OBS: A o primeiro valor contido no array começa em 0
+        console.log(aluno.humano) //O ponto é usado para buscar a informação dentro do Objeto(var aluno)
+
+
+        //É possivel usar os arrays integrados com os objetos. ASSIM:
+        
+        var aluno = {
+            nome: alunos[1] //Ao marcar a array 'alunos' e pedir o elemento da posição [1] ele busca apenas o valor especifico.
+        }                   //OBS: Se não indicar qual posição de elemento buscar, ele vai buscar todos os elementos da array.
+
+        console.log(aluno.nome)
+
+    </script>
+</body>
+</html>
