@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso Javascript</title>
+</head>
+<body>
+    <script>
+        //Para criar uma função nós precisamos definir a palavra chave "function" seguido do nome. No caso foi (soma)
+        //Dentro dos parenteses "()", que vem logo despois do nome da função, a gente vai definir os parametro que a função vai receber. Que no caso foi (numero1 e numero2)
+        function soma(numero1, numero2){
+            //O que ficar entre as chaves "{}" será o corpo da função e o que ela vai executar quando for chamada 
+            var resultado = numero1 + numero2
+
+            return resultado //Quando se utiliza a variavel de chave "var" é só é visivel dentro do escopo dela
+                            //Por isso é preciso declarar ela la fora outra vez
+        }
+        
+        var resultado = soma(7, 8) 
+        console.log(resultado)
+        //resultado = 15
+
+        //OBS: *Dentro dos parenteses "()" da function pode receber quantos parametros ela quiser.
+             //*E assim como as váriaveis, NÃO é preciso atribuir tipo para os valores dos paramentros(número1 e número2)
+    </script>
+</body>
+</html>

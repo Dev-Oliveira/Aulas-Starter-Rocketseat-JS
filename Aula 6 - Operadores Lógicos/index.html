@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso Javascript</title>
+</head>
+<body>
+    <script>
+   //Explicando os sinais da condição if:
+   //O sinal ">"   significa MAIOR
+   //O sinal ">="  significa MAIOR OU IGUAL
+   //O sinal "<"   significa MENOR
+   //O sinal "<="  significa MENOR OU IGUAL
+   //O sinal "="   significa RECEBE
+   //O sinal "=="  significa IGUAL
+   //O sinal "===" significa IDENTICO
+   //O sinal "!="  significa DIFERENTE (NOT)       
+   //O sinal "!==" significa DIFERENÇA IDENTICA
+   //O sinal "&&"  significa "E"(AND) 
+   //O sinal "||"  significa OU(OR)
+   //OBS: A diferença entre o igual e o identico é que
+   //o igual exibe valor verdadeiro(true) quando um numero é              
+   //comparado a uma string de numero. Ex: (10 == "10") ->true 
+   //No indentico o valor precisa conter o mesmo tipo, logo:                                                  
+   //ex: (10 === "10") -> false 
+   
+   //veja o exemplo:
+
+   var sexo = 'F', idade = 23
+
+   if(sexo == 'M' && idade >= 18){
+        console.log('OK!')
+   } else {
+       console.log('Incorreto')
+   }
+
+   //Armazenando o resultado da condição em uma variavel
+
+        //Formato normal:
+
+    var sexo = 'F'
+    var masculino //criar a variavel sem falor só pra pode utilizar ela dentro da função sem repetir o 'var'
+
+    if(sexo == 'M'){
+        masculino = true
+    } else {
+        masculino = false
+    }
+    
+    console.log(masculino)
+
+        //Formato simplificado
+
+    var sexo = 'M'
+
+    var masculino = sexo =='M'   //Essa simplificação só é possivel porque o JS ja retorna naturalmente
+    console.log(masculino)       //o valor das expressoes em booleano
+
+
+
+
+    </script>
+</body>
+</html>

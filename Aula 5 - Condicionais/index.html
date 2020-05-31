@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso Javascript</title>
+</head>
+<body>
+    <script> //Montando uma função if(se) para retornar qual é o sexo proposto na função
+        function retornasexo(sexo){
+
+            if (sexo == 'M'){                    //Explicando os sinais da condição if:
+                                                   //O sinal "="   significa recebe
+                return "Masculino"                 //O sinal "=="  significa igual
+                                                   //O sinal "===" significa identico
+            } else if(sexo == "F"){                //O sinal "!="  significa diferente        
+                                                   //O sinal "!==" significa identicamente diferente
+                return "Feminino"                  //O sinal "&&"  significa "E"(AND) 
+                                                   //O sinal "||"  significa OU(OR)
+            }else{                                 //OBS: A diferença entre o igual e o identico é que
+                                                   //o igual exibe valor verdadeiro(true) quando um numero é              
+                return "Outro"                     //comparado a uma string de numero. Ex: (10 == "10") ->true 
+                                                   //No indentico o valor precisa conter o mesmo tipo, logo:                                                  
+            }                                      //ex: (10 === "10") -> false 
+        }                                        
+                                                 
+                                                 
+
+        var resultado = retornasexo('M')
+        console.log(resultado)
+        
+          //Montando uma função Switch (O switch é uma alternativa pra simplificar caso for preciso
+          //fazer muitos "if's" em cima de uma váriavel só verificando igualdade )
+
+        function retornasexo(sexo){
+            switch (sexo){
+                case 'M': 
+                    return 'Masculino'
+                case 'F':
+                    return 'Feminino'
+                default:
+                    return 'Outro'
+            }
+        }
+
+        var resultado = retornasexo('F')
+        console.log(resultado)
+
+         
+    </script>                                   
+</body>
+</html>
