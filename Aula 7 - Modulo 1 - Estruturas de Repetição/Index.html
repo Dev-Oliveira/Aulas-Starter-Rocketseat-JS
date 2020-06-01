@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso Javascript</title>
+</head>
+<body>
+    <script>
+                                                 //O "for" é um intervalo entre dois valores,                          
+                                                //por exemplo: existe o intervalo entre 0 e 100
+     for (var i = 0; i <= 100; i++){            //que são outros 99 numeros.
+         console.log(i)
+     }                                          //Com o for nós conseguimos demontrar todos esses valores
+                                                //em poucas linhas de comando, graças a estrutura de repetição
+
+                                    //Explicando o for
+
+     //No "for" temos a seguinte formação: for( ; ; ){}
+     //No primeiro espaço do for(1*; ; ){} é onde devemos colocar o nosso valor inicial
+     //No segundo espaço do for( ; 2*; ){} é onde devemos colocar a nossa condição
+     //No terceiro espaço do for( ; ;3*){} é o que deve ser feito em relação a variavel
+     //enquanto a condição for verdadeira 
+     //Entre os conchetes colocamos qual ação o codigo pode fazer a cada vez que a estrutura se repetir
+
+
+
+     var j = 0                          //O while acontece sempre enquanto algo acontece.
+     while(j <= 100) {                  //Por exemplo, ali no codigo:
+         console.log(j)                 //enquanto a variavel j for menor ou igual a 100
+         j++                            //faça o que estiver entre conchetes'{}'
+                                        //Mas para que a condição ter continuidade é preciso
+     }                                  //acrescentar um valor para que o codigo possa atualizar o prooximo passo
+
+ 
+     //Qual o melhor momento para utilizar o for e o while?
+
+     // R: É recomendado utilizar o for sempre que voce souber o valor do seu intervalo
+     //e while quando isso nao for possivel.
+       //Segue um exemplo que seria melhor usar 'while':
+
+       //info: é preciso dividir o um numero qualquer por 5, até que ele seja menor que 50.
+
+       var j = 2000393000
+        while(j > 50){
+
+            console.log(j)
+            j /= 5
+        }
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
