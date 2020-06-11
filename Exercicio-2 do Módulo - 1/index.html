@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio-2 do Módulo-2 do Curso de Javascript</title>
+</head>
+<body>
+    <script>
+        //Criar uma função que dado o intervalo (entre x e y) exiba todos números pares.
+        //Para resolver isso, eu tenho um intervalo para analisar, então usarei o 'for' para poder percorrer cada valor
+        //Após montar o for preciso verificar se o numero é divisivel por 2
+        //farei isso usando o if. (Se "x%2 == 0", ou seja, se o res da divisão de 'x' por 2 for igual a 0,
+        //Então da um console.log pra mostrar o valor de x
+       function pares(x, y){
+        
+            for (var x; x < y; x++){    
+                if(x%2 == 0 ){
+                console.log(x)
+                }
+            } 
+        }
+        pares(32, 321)
+    </script>
+</body>
+</html>

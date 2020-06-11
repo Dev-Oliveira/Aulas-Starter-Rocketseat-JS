@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso Javascript</title>
+</head>
+<body>
+    <script>
+                //Nessa aula estudamos o conceito de intervalo e timeout.
+                //Um intervalo dentro do javascript é alguma função que
+                //executa varias vezes dentro de um intervalo. Segue:
+    
+        function exibeAlgo(){
+
+            console.log("Hello World")
+            
+        }
+
+        /* setInterval(exibeAlgo, 1000) */  //Nesse caso o setInterval esta mostrando a função a cada segundo
+                                      //setInterval( 1*; ) --- 1* É onde se deve colocar a função a ser exibida
+                                      //setInterval( ; 2*) --- 2* É onde se define o tempo de intervalo entre a exibição
+
+        
+                                    
+                                //SetTimeout é o comando para executar uma função com um delay(Atraso)
+                                //Diferente do SetInterval, ele executa apenas 1 unica vez com o delay que voce definir
+                                //Segue:
+
+        setTimeout(exibeAlgo, 5000)   //Nesse caso o setTimeout esta definido pra acontecer depois de 5000 milisegundos ou 5s
+                                      //setTimeout( 1*; ) --- 1* É onde se deve colocar a função a ser exibida
+                                      //setTimeout( ; 2*) --- 2* É onde se define o tempo a ser contado antes da função ser exibida(delay)
+
+    </script>
+</body>
+</html>

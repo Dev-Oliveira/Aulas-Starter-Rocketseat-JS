@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Esse exercício pede para escrever uma função para mostrar na tela
+        // o conteudo de um array(habilidades) que esta contido em um objeto que está contido em um array(usuarios)
+        //OBS: Melhores detalhes no arquivo Desafios.pdf 
+
+        //Resolução:
+        function Habilidades(usuarios){
+        
+            for( x = 0; x < usuarios.length; x++ ){
+            var nome = usuarios[x].nome, habilidades = usuarios[x].habilidades 
+            console.log(`O ${nome} possui as habilidades: ${habilidades}`)
+            }
+        }
+
+        var usuarios = [
+        
+            {
+                nome: "Diego",
+                habilidades: ["Javascript","ReactJS","Redux"]
+            },
+            {
+                nome: "Gabriel",
+                habilidades: ["VueJS", "Ruby on Rails", "Elixir"]
+            }
+        ]
+        Habilidades(usuarios)
+
+        //A função deve produzir o seguinte resultado:
+
+        //O diego possui as Habilidades: Javascript, ReactJS, Redux
+        //O Gabriel possui as Habilidades: VueJS, Ruby on Rails, Elixir
+
+    </script>
+</body>
+</html>

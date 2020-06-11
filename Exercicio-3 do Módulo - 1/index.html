@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Escrever uma função que verifique se o vetor de habilidades passado possui
+        // a habilidade "Javascript" e retorna um booleano true/false, caso exista ou não.
+
+        //Resolução
+
+        function temHabilidade(skills) {    //Pra fazer isso noto que é preciso percorrer o objeto
+                                            //e para isso eu uso a estrutura de repetição "for"
+
+            let si = skills.indexOf("Javascript") //Aque eu recebo dentro de uma variavel o elemento cujo o conteudo é "Javascript"
+                                                  //Quando ele não encontrar o elemento, ele vai receber o valor -1
+                                                  //O .indexOf procura dentro do array o valor indicado dentro dos parenteses, no caso "Javascript"
+
+            for(x = 0; x < skills.length; x++){
+
+                //Como terei que analisar as condicoes, vou precisar de um comando "if else"
+
+                if(si >= 0){
+                    return true    //Aqui faz: Se "si maior ou igual a 0" me retorna true
+                }
+
+                    //Aqui, levando em consideração que a condição trabalho com valores booleanos
+                    //podemos simplificar dessa forma que dara o mesmo resultado
+                 return si >= 0
+                
+        
+
+
+
+
+            }
+        }
+            
+        var skills = ["Javascript", "Reactjs", "React Native"]
+        temHabilidade(skills)
+        console.log(temHabilidade(skills))
+
+    </script>
+</body>
+</html>
